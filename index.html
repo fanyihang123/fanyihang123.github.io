@@ -1,11 +1,457 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>My Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bowei Pang</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Hello World!</h1>
-    <p>Testing.</p>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="index.html" style="color:white;font-size:20px;line-height: 40px">BOWEI PANG</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+	    <li class="active"><a href="#intro">home</a></li>
+        <li class="active"><a href="#about">About me</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#work">Experience</a></li>
+		<li><a href="#contact">Contact</a></li>
+      </ul>
+           </div>
+        </div>
+    </nav>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+	
+		<div class="slogan">
+			<h2>Bowei Pang </h2>
+			<h4>UNIVERSITY OF FLORIDA</h4>
+		
+		</div>
+		<div class="page-scroll">
+			<a href="#about" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated" style="color: white"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+
+	<!-- Section: about -->
+    <section id="about" class="home-section text-center  bg-gray">
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+					<div class="section-heading">
+                        <h2>About me</h2>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-xs-6 col-lg-3">
+				<div class="wow bounceInUp" data-wow-delay="0.2s">
+                        <img src="img/me/headshot.jpg" alt="" class="img-responsive img-thumbnail" />
+				</div>
+            </div>
+            <div>
+                <p style="font-size:18px">Hello! I'm Bowei Pang, from Beijing, China. I got my Master degree in Computer Engineering at University of Florida, and now working as a software engineer at a startup company in Philadelphia. I'm interested in cloud computing, web development and data engineering. I am proficient with Java, Python, and JavaScript. I have hands-on experience with AWS, Node.js, Express, MongoDB, Flask, Spring MVC, Hibernate, MySQL, Kafka, Spark, Cassandra, Angular, React, and Bootstrap. Now I'm an AWS Certified Solutions Architect (Jan, 2018 - Jan, 2020), and able to build highly scalable, resilient and secure applications using Amazon Web Services.</p>
+                <p style="font-size:18px">I completed my Bachelor's Degree in Electrical Engineering at Beijing University of Posts and Telecommunications. In my spare time, I like playing soccer, cooking and traveling. </p>
+            </div>
+        
+        </div>
+		
+    <!-- <a href="docs/Bowei PANG-Resume.pdf" class="btn btn-lg btn-outline" target="_blank">
+                        <i class="fa fa-file-text"></i> My Resume
+    </a> -->
+    
+	<div class="page-scroll">
+			<a href="#projects" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+    </div>
+    </div>
+	</section>
+	<!-- /Section: about -->
+	
+
+	<!-- Section: projects -->
+    <section id="projects" class="home-section text-center">
+		
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+					<div class="section-heading">
+					<h3>MY PROJECTS</h3>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="container">
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>YelpCamp – Campgrounds Information Sharing Platform for Backpackers</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Individual Project. June. 2017 – Sept. 2017</b></p>
+                <p style="font-size:18px">In this project, I worked as a full stack web developer to build a web application which allows users to post and comment their favorite campgrounds around the world. I built the back-end server with Node.js and Express and stored the user and campground data in MongoDB. I designed the data models and routes with REST and implemented user authentication and authorization with Passport.js. I also created the front-end webpages using Bootstrap, jQuery, EJS, and deployed the web app on Heroku using Git.</p>
+                <p>
+		 <a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="https://bowieyelpcamp.herokuapp.com/" target="_blank">Visit the web app &raquo;</a>
+                 <!--<a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="docs/campgrounds.js" target="_blank">See the code example &raquo;</a>-->
+		</p>
+		<img class="rounded float-left" src="img/works/16.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/17.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/18.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Real-time Stock Data Analytics System</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Bootcamp Project. Nov. 2016 – Feb. 2017</b></p>
+                <p style="font-size:18px">In this project, I built a high-performance stock data processing platform, which can calculated the average price of each stock every 3 seconds using Spark Streaming. I applied Kafka to ingest the stock data from Google Finance and persisted the processed data in Cassandra. I also developed a dashboard web app using Redis, Node.js, D3.js and visualized the trend of the price of the stocks. Docker is used to create a scalable deployment environment.</p>
+                <p>
+		 <a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="bigdata.html" target="_blank">See more information &raquo;</a>
+                 <!--<a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="docs/data_ingestion.txt" target="_blank">See the code example &raquo;</a>-->
+		</p>
+                <img class="rounded float-left" src="img/works/1.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/2.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/3.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Guessing Color Game</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Individual Project. June. 2017</b></p>
+                <p style="font-size:18px">I created and deployed a guessing color game using basic HTML, CSS and JavaScript. Players can click on the color blocks and keep going to find the one which has the RGB which is shown on the top of the webpage.</p>
+                <p><a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="https://ibwpang.github.io/ColorGame" target="_blank">Play this game &raquo;</a></p>
+                <img class="rounded float-left" src="img/works/19.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/20.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/21.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Student Information Management System</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Individual Project. May. 2017 – July. 2017</b></p>
+                <p style="font-size:18px">I created and deployed a Spring MVC and Hibernate web application on Tomcat, and have it interact with MySQL database. This system implemented the CRUD operations to list, search, add, update, or delete students’ information. I accomplished the web app with Model-View-Controller design pattern, and interfaced the database with Object-Relational Mapping and Data-Accessor-Object design pattern. I also used Bootstrap to create responsive and mobile-first front-end web pages.</p>
+                <p><a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="https://youtu.be/sAK4DlRbVmg" target="_blank">See the video demo &raquo;</a></p>
+                <img class="rounded float-left" src="img/works/4.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/5.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/6.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+			
+	<div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Albums Search Application</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Individual Project. Oct. 2017</b></p>
+                <p style="font-size:18px">This album search app is built for users to search the albums of their favorite artists. React and Bootstrap is used in this project. Thanks to the iTunes API, users can type the name of any artist in the textbox and click the search button, then React will send a GET request to iTunes using Ajax and then fetch the album data and render the data in browser.</p>
+                <p><a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="https://github.com/ibwpang/AlbumSearchApp" target="_blank">See more information &raquo;</a></p>
+                <img class="rounded float-left" src="img/works/22.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/23.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/24.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>A Compiler based on Java Virtual Machine</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Course Project. Jan. 2017 – Apr. 2017</b></p>
+                <p style="font-size:18px">In this project, I wrote a self-made compiler which can convert the source code to Java bytecode and run it on Java Virtual Machine. You can see the basic grammar of this language by click the button below. I built a scanner to implement the lexical analysis of the input character stream, and accomplished a recursive descent parser to implement the syntax analysis and generated an abstract syntax tree. I implemented the semantic analysis and type checking using LeBlanc-Cook symbol table and visitor pattern. Finally, I used the ASM Java bytecode manipulation framework to generate the Java bytecode of the source code and ran it on Java Virtual Machine.</p>
+                    <p><a class="btn btn-info" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        See the grammar example
+                    </a></p>
+                <div class="collapse" id="collapseExample">
+                      <div class="well">
+                        <p>ExprTestClass { integer a a <- 2; integer b b <- 3; a <- b - a * (2 / 2 -6) + 5 % 2 + 5 / 2; } </p>
+                        <p>ModImageClass url u { image i image j  frame f u -> j; i <- j % 128; i -> f -> show; sleep 3000; } </p>
+                      </div>
+                </div>
+                <img class="rounded float-left" src="img/works/7.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-center" src="img/works/8.jpg" alt="proj1" style="width: 30%; height: 30%">
+                <img class="rounded float-right" src="img/works/9.jpg" alt="proj1" style="width: 30%; height: 30%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Interactive Earthquakes Data Visualization System</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Course Project. Feb. 2017 – Mar. 2017</b></p>
+                <p style="font-size:18px">This Java applet collected and classified the live data of recent earthquakes around the world. I applied searching and sorting algorithms to manage the large data set. The earthquakes data is demonstrated on an interactive map using Processing and Unfolding Maps library. I built the interactive graphical program with Event-Driven programming.</p>
+<!--                <p><a class="btn btn-primary" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="#">See the video demo &raquo;</a></p>-->
+                <img class="rounded float-left" src="img/works/10.jpg" alt="proj1" style="width: 30%; height: 20%">
+                <img class="rounded float-center" src="img/works/11.jpg" alt="proj1" style="width: 30%; height: 20%">
+                <img class="rounded float-right" src="img/works/12.jpg" alt="proj1" style="width: 30%; height: 20%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Car Park Control System using Agile Methods</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Team Project. Mar. 2015 – May. 2015</b></p>
+                <p style="font-size:18px">This project was conducted by a team of six members. We implemented a flexible and extensible car park control system using Java, and designed its GUI using Swing and AWT. The control system was developed with Agile methods. We also applied the Test-driven development and developed a set of test programs using JUnit.</p>
+<!--                <p><a class="btn btn-primary" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="#">See the video demo &raquo;</a></p>-->
+                <img class="rounded float-left" src="img/works/13.jpg" alt="proj1" style="width: 30%; height: 20%">
+                <img class="rounded float-center" src="img/works/14.jpg" alt="proj1" style="width: 30%; height: 20%">
+                <img class="rounded float-right" src="img/works/15.jpg" alt="proj1" style="width: 30%; height: 20%">
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12">
+			    <br><br><br>
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Facial Expression Recognition using Convolutional Neutal Network</h3>
+            </div>
+            <div class="col-xs-12">
+               <p style="font-size:18px; font-style: italic"><b>Team Project, leader of a 3-member team. Sep. 2016 – Nov. 2016</b></p>
+                <p style="font-size:18px">In this project, I led a team of three members, and we accomplished a Convolutional Neural Network based on Caffe, achieving a facial recognition accuracy of 80% with a data set which contains 2,000 images of facial expressions. We also applied the Network in Network structure to extract both local and global features of facial expression.</p>
+<!--                <p><a class="btn btn-primary" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="#">See the video demo &raquo;</a></p>-->
+               <p><a class="btn btn-info" data-toggle="tooltip" title="Click here to get more information" data-placement="bottom" href="img/works/poster.jpg" target="_blank">See our poster &raquo;</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+
+        <div class="page-scroll">
+			<a href="#work" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+	</section>
+	<!-- /Section: projects -->
+
+<!-- Section: work -->
+    <section id="work" class="home-section text-center bg-gray">
+		
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+					<div class="section-heading">
+					<h3>EXPERIENCE</h3>
+					
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="container">
+        <div class="row">
+                <h4>HeavyWater, Inc.</h4>		
+						<p><b>Software Engineer, Jun. 2018 – present</b></p>
+						<p style="font-size:18px">Designed and implemented the file transformation component using AWS CloudFormation, Step Functions and Lambda to improve and extend the documents processing skills and bank statements verification skills of AIVA. Automated the CI/CD process and applied the unit and integration testing using Jenkins and pipelines. Built and managed the artifacts using Maven. Implemented and deployed the system on AWS with microservices architecture. Maintained and improved the Verification of Assets system. Migrated the borrower web app from EC2 to S3 static hosting and utilized AWS CloudFront to deliver the content securely and quickly. Optimized the data extraction from DynamoDB thereby reduced 50% of time to load the third-party service to generate bank statements and reports.</p>
+        </div>
+        </div>
+                
+        <div class="page-scroll">
+			<a href="#contact" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+
+	</section>
+	<!-- /Section: work -->
+	
+
+	
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#work">Experience</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <h4>Contact Me</h4>
+                    <address>
+                      <i class="fa fa-map-marker"></i>
+		              Philadelphia, PA<br>
+                      <i class="fa fa-envelope"></i>
+		              Email: boweipang@outlook.com
+		           </address>
+                </div>
+                <div class="col-xs-3">
+                    <h4>Social</h4>
+                    <div class="nav navbar-nav" style="padding: 0px 50px;">
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/bowei-pang/" target="_blank"><i class="fa fa-linkedin" style="font-size: 2em"></i></a>
+                        <a class="btn btn-social-icon btn-github" href="https://github.com/ibwpang" target="_blank"><i class="fa fa-github" style="font-size: 2em"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/channel/UCG3Nh1StqaJJGWC5MYXk64g" target="_blank"><i class="fa fa-youtube" style="font-size: 2em"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>Copyright © 2018 Bowei Pang</p>
+                </div>
+            </div>
+        </div>
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="wow shake" data-wow-delay="0.2s">
+					<div class="page-scroll marginbot-30">
+						<a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated" style="color: white"></i>
+						</a>
+					</div>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+
 </body>
+
 </html>
