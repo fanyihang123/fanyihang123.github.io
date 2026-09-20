@@ -305,7 +305,7 @@ hr {
 	width:100%;
 	position:relative;
 	/* background: url(../img/IMG_7342.JPG) no-repeat top center; */
-    background: url(../img/IMG_7342_m.jpg) no-repeat center 25%;
+    background: url(../img/IMG_7342_m.jpg) no-repeat center 10%;
     /* This is what forces the image to shrink proportionally */
     background-size: cover;
     /* Tells the element how much vertical space to take up */
