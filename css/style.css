@@ -304,7 +304,6 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	
 	background: url(../img/IMG_7342.JPG) no-repeat top center;
     /* This is what forces the image to shrink proportionally */
     background-size: cover;
